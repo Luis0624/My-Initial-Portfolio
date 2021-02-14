@@ -3,28 +3,27 @@
 
 <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <!-- this link creates a little icon in the tab bar. just make sure you link the right image -->
-    <link rel="icon" type="image/png" href=".assets/images/favicon.png">
     <title>My Portfolio</title>
 </head>
 
-<body>
+<body class= flex-container>
     <!-- name header and nav -->
-    <header>
+    <header class="header-footer-container">
         <h1> Luis Apuango</h1>
         <nav>
-             <ul>
-                 <li>
+             <ul class="ul-container">
+                <li>
                     <a href="#about-me">About Me </a>
                 </li>
                    
                 <li>
-                    <a href="#Work">Work </a>
+                    <a href="#work">Work </a>
                 </li>
                    
                 <li>
@@ -40,45 +39,50 @@
     
     <main class="main-content-wrapper">
 
-        <!-- about me container -->
+        <!-- about me container class="profile-photo"-->
         <section id="about-me" class="page-section">
-
-            <img class="profile-photo" src="/assets/images/ProfilePic2021.jpg"  alt=" Picture of aspiring developer"/>
-
-            <div class="float-left">
-
+           
+            <div>
                 <h2>About Me</h2>
-
             </div>
-            
-            <div class="about-me-text">
 
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Expedita ipsa excepturi eum sed nulla quia deleniti ea 
-                    adipisci, quibusdam quas unde eaque quasi nobis numquam 
-                    obcaecati deserunt, atque mollitia quaerat a optio. 
-                    Incidunt nihil amet id quod libero repellat? Facere 
-                    explicabo nobis totam temporibus mollitia laborum quam
-                    veniam. Deserunt, neque!
-                </p> 
+           <figure class="profile-img-txt">
+                <img class="profile-pic" src="./images/profilepic2021.jpg" alt=" Picture of aspiring developer"  style= "width:175px; height:150px"/>
+                <div>
 
-                <p> 
-                    ipsum dolor sit amet consectetur adipisicing elit. 
-                    Deleniti eum dolorem aspernatur ipsum expedita dolorum 
-                    doloribus maiores omnis placeat nam.
-                </p>
-             </div>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Expedita ipsa excepturi eum sed nulla quia deleniti ea 
+                        adipisci, quibusdam quas unde eaque quasi nobis numquam 
+                        obcaecati deserunt, atque mollitia quaerat a optio. 
+                        Incidunt nihil amet id quod libero repellat? Facere 
+                        explicabo nobis totam temporibus mollitia laborum quam
+                        veniam. Deserunt, neque!
+                    </p> 
+
+                    <p> 
+                        ipsum dolor sit amet consectetur adipisicing elit. 
+                        Deleniti eum dolorem aspernatur ipsum expedita dolorum 
+                        doloribus maiores omnis placeat nam. ipsum dolor sit amet 
+                        consectetur adipisicing elit. Deleniti eum dolorem aspernatur
+                        ipsum expedita dolorum doloribus maiores omnis placeat nam. 
+                        Deleniti eum dolorem aspernatur ipsum expedita dolorum 
+                        doloribus maiores omnis placeat nam. ipsum dolor sit amet 
+                        consectetur adipisicing elit. Deleniti eum dolorem aspernatur
+                        ipsum expedita dolorum doloribus maiores omnis placeat nam.
+                    </p>
+                </div>
+            </figure>
         </section>
 
         <!--work container  -->
         <section id="work" class="page-section">
 
-            <!-- <div class="float-left"> -->
-                <h2>Work</h2>
-            <!-- </div> -->
+            <div>
+                <h2>My Work</h2>
+            </div>
 
-            <div class="flex-container">
+            <div class="work-container">
                 <!-- this is a template for a image used as a link. change values for actual work
                 add class="FLex-item-work1" -->
                 <a href="https://luis0624.github.io/Horiseon-Media-Relations-Experts/"><img src="./images/Horiseon-Project.png" class="flex-img" alt="Refactor Project" style="width:700px;height:450px;">
@@ -88,55 +92,53 @@
                         </p> 
                     </div>
                 </a>
+            </div>    
+            <section>
+                <div class="sub-work-cantainer">
+                    
+                    <a href="https://google.com"><img src= "https://unsplash.it/300/200?image=355" class="sub-flex-img" alt= "Unsplash it camera placeholder image" />
+                        <div>
+                            <p class="flex-img-txt">
+                                Test img text!
+                            </p>    
+                        </div>
+                    </a>
 
-                <!-- this is a template for a image used as a link. change values for actual work
-                add class="FLex-item-work2"
-                the img src must include /width/hieght and image="number of image you want to use" no need to add style: width, height  -->
-                <a href="https://google.com"><img src= "https://unsplash.it/300/200?image=355" class="flex-img" alt= "Unsplash it camera placeholder image" />
-                    <div>
-                        <p class="flex-img-txt">
-                            Test img text!
-                        </p>    
-                    </div>
-                </a>
+                    <a href="https://google.com"><img src="https://unsplash.it/300/200?image=1039" class="sub-flex-img" alt= "Unsplash it waterfall placeholder image" />
+                        <div>
+                            <p class="flex-img-txt">
+                                    Test img text!!
+                            </p>    
+                        </div>
+                    </a>
 
-                <!-- this is a template for a image used as a link. change values for actual work
-                add class="FLex-item-work3" -->
-                <a href="https://google.com"><img src="https://unsplash.it/300/200?image=1039" class="flex-img" alt= "Unsplash it waterfall placeholder image" />
-                    <div>
-                        <p class="flex-img-txt">
-                            Test img text!!
-                        </p>    
-                    </div>
-                </a>
+                    <a href="https://google.com"><img src="https://unsplash.it/300/200?image=304" class="sub-flex-img2" alt= "unplash it hand placeholder image" />
+                        <div>
+                            <p class="flex-img-txt">
+                                Test img text!!!
+                            </p> 
+                        </div>                      
+                    </a>
 
-                <!-- this is a template for a image used as a link. change values for actual work
-                add class="FLex-item-work4" -->
-                <a href="https://google.com"><img src="https://unsplash.it/300/200?image=304" class="flex-img" alt= "unplash it hand placeholder image" />
-                    <div>
-                        <p class="flex-img-txt">
-                            Test img text!!!
-                        </p> 
-                    </div>
-                </a>
-
-                <!-- this is a template for a image used as a link. change values for actual work
-                add class="FLex-item-work5" -->
-                <a href="https://google.com"><img src="https://unsplash.it/300/200?image=348" class="flex-img" alt= "unsplash it busy mall placeholder image" />
-                    <div>
-                        <p class="flex-img-txt">
-                            Test img text!!!!
-                        </p>     
-                    </div>
-                </a>
-            </div>
-
+                    <a href="https://google.com"><img src="https://unsplash.it/300/200?image=348" class="sub-flex-img2" alt= "unsplash it busy mall placeholder image" />
+                        <div>
+                            <p class="flex-img-txt">
+                                Test img text!!!!
+                            </p>     
+                        </div>
+                    </a>
+                </div>    
+            </section>     
         </section>
         <!-- contact me container -->
         <section id="contact-me" class="page-section">
-            <h2>Contact Me</h2>
-            <div class=bottom-nav>
-               <ul class= social-media>
+
+            <div>
+                <h2>Contact Me</h2>
+            </div>
+
+            <div class=header-footer-container>
+               <ul class= ul-container>
                    
                    <!-- try adding images as a tag links
                         if possible make these to buttons -->

@@ -8,64 +8,130 @@ body {
     background-color: whitesmoke;
 }
 
-header {
-    background-color: black;
+.header-footer-container {
+    background-color: rgb(114, 114, 112) ;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 header h1 {
-    display: inline-block;
     font-size: 32px;
     padding: 15px 10px 0px 25px;
     margin: 10px 0 5px ;
     color: whitesmoke;
-    background-color: blue;
+    background-color: rgb(16, 109, 196);
 }
 
-header nav {
+.ul-container {
+    display: flex;
+    justify-content: space-evenly;
     padding-top: 15px;
-    margin: 10px 20px 10px 0;
-    float: right;
+    margin: 10px 0;
+    width:100%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18px;   
-}
-/* header nav ul {
-    list-style-type: none;
-} */
-
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-    border-bottom: 3px solid blue;
-    padding-bottom: 3px; 
+    font-size: 18px;
 }
 
-header nav ul li a {
+li {
+    border-bottom: 3px solid rgb(16, 109, 196);
+    margin: 0 7px 3px;
+}
+
+a {
     color: whitesmoke;
     text-decoration: none;
+}
 
+p{
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+h2 {
+   text-align: center;
+   font-size: 1.5em;
+   margin: 5px 0;
+   border-bottom: 3px double rgb(16, 109, 196) ;
+   border-top: 3px double rgb(16, 109, 196) ;
+}
+
+.main-content-wrapper {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+ .profile-pic{
+     border-radius: 25px ;
+ }
+.profile-img-txt {
+    display: flex;
+}
+
+.work-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+.sub-work-cantainer{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+.flex-img .sub-flex-img {
+    margin: 5px;
+    border: 2px solid black; 
+    width:fit-content; 
+}
+
+.sub-flex-img2 {
+    order: 2;
+}
+
+.flex-img-txt {
+    background-color: rgb(114, 114, 112);
 }
 
 
-
-@media screen and (max-width:992px) {
-    .main-content-wrapper{
-
-    }
-    header {
-
-    }
+.page-section {
+    margin: 5px 0;
 }
 
 @media screen and (max-width:768px) {
-    .main-content-wrapper{
-
-    }
-    header {
-        
+    .flex-container {
+        display: flex;
+        flex-flow: column wrap;
     }
 }
 
-/* test to make the class is set correctly on the work images
-.flex-img {
-    border: 5px solid red;
+@media screen and (max-width:420px){
+    .flex-container {
+        display: flex;
+        flex-flow: column wrap;
+    }
 
-} */
+    .header-footer-container {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+    }
+
+    .ul-container {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+    }
+    
+    .profile-img-txt {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+    }
+
+    .profile-pic {
+        align-self: center;
+    }
+
+}
